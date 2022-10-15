@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Portifolio</title>
+    <link rel="shortcut icon" href="src/img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <main class="card">
+        <div class="myinfo">
+            <img src="./src/img/profile-pic.jpg" alt="profile picture" id="profpic">
+            <h1 class="name">Tulio Avellar</h1>
+            <h2 class="position">Front End Developer Junior</h2>
+        </div>
+        <div class="content">
+            <ul class="tabs">
+                <li class="tab selected" id="description"><img src="./src/img/about.gif" alt="about icon"></li>
+                <li class="tab" id="links"><img src="./src/img/heart.gif" alt="heart icon"></li>
+            </ul>
+            <div class="infotabs">
+                <div class="info selected" id="info-description">
+                    <h3 class="subtitle">About</h3>
+                    <div class="description">
+                        <p>Hi! My name is Tulio Avellar. Welcome!</p>
+                        <p>I'm a chemical engineer since 2015 and I've worked in the food and pharmaceutical industry, in Quality Assurance. I've always loved coding, but I used to do it as a hobby and for a few subjects at college. I started to feel an urge to find something new to achieve my career goals, and I've found it on coding. Since than, I began to study <span>JavaScript</span>, <span>HTML</span>, <span>CSS</span> and <span>Python</span> in order to advance to a next step in my career.</p>
+                    </div>
+                </div>
+                <div class="info" id="info-links">
+                    <h3 class="subtitle">My network</h3>
+                    <ul class="links">
+                        <li><a href="./src/resume.pdf" target="_blank" class="resume">Resumé</a></li>
+                        <li><a href="https://www.linkedin.com/in/tulioavellar/" target="_blank" class="linkedin">LinkedIn</a></li>
+                        <li><a href="https://github.com/tulioavellar" target="_blank" class="github">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./src/js/script.js"></script>
+</body>
+</html>

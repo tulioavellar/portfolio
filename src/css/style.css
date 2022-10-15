@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #070d12;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #e228d8;
+    border-radius: 20px;
+    border: 3px solid #070d12;
+  }
+
+a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 250px;
+    color: #f3f3f3;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    transition: opacity 0.2s ease-in-out;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    color: white;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    background-color: #070d12;
+    width: 370px;
+    border: 2px solid #e126d9;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card .myinfo {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.card .myinfo #profpic {
+    width: 96px;
+    height: 96px;
+    border-radius: 48px;
+    border: 4px solid #02d08f
+}
+
+.card .myinfo .name {
+    font-size: 26px;
+    margin: 0;
+}
+
+.card .myinfo .position {
+    font-size: 20px;
+    color: #b8bbc5;
+    margin: 0;
+}
+
+.card .content {
+    background-color: #070d12;
+    margin-top: 15px;
+}
+
+.card .content .tabs {
+   display: flex;
+}
+
+.card .content .tabs img {
+    width: 30px;
+    height: 30px;
+}
+
+.card .content .tabs .tab {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.card .content .tabs .tab.selected {
+    background-color: #262626;
+}
+
+.card .content .infotabs {
+    background-color: #262626;
+}
+
+.card .content .tabs .tab:hover {
+    background-color: #414141;
+}
+
+.card .content .infotabs .info {
+   min-height: 260px;
+   padding: 15px;
+   display: none;
+}
+
+.card .content .infotabs .info.selected {
+   display: block;
+}
+
+.infotabs .info .subtitle {
+   font-size: 22px;
+   margin-bottom: 25px;
+   text-align: center;
+}
+
+.infotabs .info .description {
+    font-size: 20px;
+    max-height: 180px;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+.infotabs .info .links {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.infotabs .links .resume {
+    background-color: #06c185;
+}
+
+.infotabs .links .linkedin {
+    background-color: #1d87ed;
+}
+
+.infotabs .links .github {
+    background-color: #545454;
+}
+
+.infotabs .description span  {
+    color: green;
+}
+
+a:hover {
+    opacity: 0.8;
+}
