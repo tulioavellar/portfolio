@@ -8,11 +8,13 @@ tabs.forEach(tab => {
         infoSelection(tab);
     });
 })
+
 function tabSelection(tab) {
     const tabSelected = document.querySelector(".tab.selected");
     tabSelected.classList.remove("selected");
     tab.classList.add("selected");
 }
+
 function infoSelection(tab) {
     const infoSelected = document.querySelector(".info.selected");
     infoSelected.classList.remove("selected");
