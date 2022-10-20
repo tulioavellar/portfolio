@@ -1,14 +1,3 @@
-const tabs = document.querySelectorAll(".tab");
-tabs.forEach(tab => {
-    tab.addEventListener("click", function() {
-        if(tab.classList.contains("selected")) {
-            return;
-        }
-        tabSelection(tab);
-        infoSelection(tab);
-    });
-})
-
 function tabSelection(tab) {
     const tabSelected = document.querySelector(".tab.selected");
     tabSelected.classList.remove("selected");
@@ -22,3 +11,14 @@ function infoSelection(tab) {
     const infoShow = document.getElementById(idInfoTab);
     infoShow.classList.add("selected");
 }
+
+const tabs = document.querySelectorAll(".tab");
+tabs.forEach(tab => {
+    tab.addEventListener("click", function() {
+        if(tab.classList.contains("selected")) {
+            return;
+        }
+        tabSelection(tab);
+        infoSelection(tab);
+    });
+})
